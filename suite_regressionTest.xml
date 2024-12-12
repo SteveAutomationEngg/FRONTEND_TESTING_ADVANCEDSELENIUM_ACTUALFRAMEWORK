@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<groups>
+		<run>
+			<include name="regressionTest" />
+		</run>
+	</groups>
+	<test thread-count="5" name="Test">
+		<classes>
+			<class
+				name="com.comcast.crm.contact_Testngtest.CreateContactTest" />
+			<class
+				name="com.comcast.crm.contact_Testngtest.CreateContactWithOrgTest" />
+			<class
+				name="com.comcast.crm.org_Testngtest.CreateOrganizationTest" />
+			<class
+				name="com.comcast.crm.contact_Testngtest.CreateContactWithSupportDateTest" />
+			<class
+				name="com.comcast.crm.org_Testngtest.DeleteOrganizationTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
